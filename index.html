@@ -10,27 +10,89 @@
 
 <body>
     <!-- Header Start -->
-    <header>
-        <div class="container mx-auto px-4 flex w-full justify-between pt-5 items-center">
-            <h1 class="text-primary font-bold text-2xl uppercase">SM<span class="text-black">KPOM</span></h1>
-            <div class="hidden md:flex">
-                <ul class="flex gap-2">
-                    <li class="font-semibold text-base">Beranda</li>
-                    <li class="font-semibold text-base">Tentang Kami</li>
-                    <li class="font-semibold text-base">Program</li>
-                    <li class="font-semibold text-base">Guru</li>
-                    <li class="font-semibold text-base">Siswa</li>
-                    <li class="font-semibold text-base">Berita</li>
-                    <li class="font-semibold text-base">Fitur</li>
-                </ul>
-            </div>
-            <div class="px-6 py-3 bg-primary rounded-full hidden md:flex">
-                <button type="button"><span class="text-white text-base">Contact</span></button>
-            </div>
-            <div class="block md:hidden cursor-pointer">
-                <span class="w-[30px] h-[2px] border text-black block my-2"></span>
-                <span class="w-[30px] h-[2px] border text-black block my-2"></span>
-                <span class="w-[30px] h-[2px] border text-black block my-2"></span>
+    <header id="" class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4"><a href="#home"
+                        class="font-bold text-lg block py-6 text-primary md:text-3xl">SMKNS</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button type="button" id="hamburger" name="hamburger" class="block absolute right-4 md:hidden">
+                        <span class="origin-top-left hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="origin-bottom-left hamburger-line transition duration-300 ease-in-out"></span>
+                    </button>
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full md:bg-transparent md:block md:static md:max-w-full md:shadow-none md:rounded-none">
+                        <ul class="block md:flex ">
+                            <li class="group"><a href="#home"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda </a>
+                            </li>
+                            <li class="group"><a id="menu-button" href="#about" type="button"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">
+                                    Tentang Kami <span>
+                                        <svg class="h-5 w-5 text-dark" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div id="option"
+                                    class="absolute hidden z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                    role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                                    <div class="py-1 " role="none">
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                            tabindex="-1" id="menu-item-0">Sejarah</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                            tabindex="-1" id="menu-item-1">Visi Misi</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                            tabindex="-1" id="menu-item-2">Yayasan</a>
+                                        <form method="POST" action="#" role="none">
+                                            <button type="submit"
+                                                class="block w-full px-4 py-2 text-left text-sm text-gray-700"
+                                                role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
+                                        </form>
+                                    </div>
+                            </li>
+                            <li class="group"><a id="menu-button-program" href="#about" type="button"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">
+                                    Program <span>
+                                        <svg class="h-5 w-5 text-dark" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </a>
+
+                                <div id="option-program"
+                                    class="absolute hidden z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                    role="menu" aria-orientation="vertical" aria-labelledby="menu-button-pogram"
+                                    tabindex="-1">
+                                    <div class="py-1 " role="none">
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                            tabindex="-1" id="menu-item-0">K13</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                            tabindex="-1" id="menu-item-1">Visi Misi</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                            tabindex="-1" id="menu-item-2">Yayasan</a>
+                                    </div>
+
+                            </li>
+
+                            <li class="group"><a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About</a></li>
+                            <li class="group">
+                            <li class="group"><a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Client</a></li>
+                            <li class="group"><a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -184,6 +246,8 @@
 
 
     <section class="pb-96"></section>
+
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
