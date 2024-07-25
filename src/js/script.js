@@ -40,3 +40,14 @@ menuButtonProgram.addEventListener('click', function () {
     optionProgam.classList.toggle('hidden')
 
 });
+
+
+
+window.addEventListener('click', function (e) {
+    if (e.target != hambuger && e.target !== navMenu && e.target != menuButton && e.target != menuButtonProgram) {
+        hambuger.classList.remove('hamburger-active')
+        navMenu.classList.add('hidden')
+        option.classList.add('hidden')
+        optionProgam.classList.add('hidden')
+    }
+});
