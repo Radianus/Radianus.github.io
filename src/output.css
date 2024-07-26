@@ -944,20 +944,12 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pb-96 {
-  padding-bottom: 24rem;
-}
-
 .pt-16 {
   padding-top: 4rem;
 }
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pt-28 {
-  padding-top: 7rem;
 }
 
 .pt-32 {
@@ -1202,6 +1194,14 @@ body {
 @media (min-width: 640px) {
   .sm\:right-0 {
     right: 0px;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
   }
 
   .sm\:py-16 {
