@@ -3,6 +3,9 @@ module.exports = {
   content: ['index.html'],
   theme: {
     extend: {
+      fontFamily:{
+        poppins: "Poppins"
+      },
       colors: {
         primary: '#362FD9',
         secondary: '#747474',
